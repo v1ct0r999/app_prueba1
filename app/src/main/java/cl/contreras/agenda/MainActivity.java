@@ -55,15 +55,19 @@ public class MainActivity extends AppCompatActivity {
 
                 // Crear un nuevo botón grande
                 Button agendaButton = new Button(this);
-                agendaButton.setText(name + " - " + time + " - " + day);
+                agendaButton.setText("Nombre Agenda: "+ name +"\n\nVer detalles");
                 agendaButton.setLayoutParams(new LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT
+                        400
                 ));
-                agendaButton.setPadding(20, 20, 20, 20);
-                agendaButton.setTextSize(18);
+                agendaButton.setPadding(10, 20, 80, 10);
+                agendaButton.setTextSize(25);
 
-                // Aquí puedes agregar la lógica futura para editar, eliminar o ver detalles
+                agendaButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(MainActivity.this, OpcionesAgendaActivity.class);
+                    intent.putExtra("agenda_name", name); // Enviar el nombre de la agenda si es necesario
+                    startActivity(intent);
+                });
 
                 // Agregar el botón al layout dinámico
                 agendaLayout.addView(agendaButton);
