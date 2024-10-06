@@ -20,20 +20,22 @@
         android:id="@+id/editTextTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Horario" />
+        android:hint="Horario"
+        android:inputType="time"/>
 
     <EditText
         android:id="@+id/editTextDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Día" />
+        android:hint="Día"
+        android:inputType="date"/>
 
     <EditText
         android:id="@+id/editTextFrequency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Frecuencia (horas)"
-        android:inputType="number" />
+        android:inputType="" />
 
     <Button
         android:id="@+id/btnSave"
