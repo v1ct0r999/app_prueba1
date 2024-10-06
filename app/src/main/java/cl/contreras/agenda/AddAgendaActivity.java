@@ -24,8 +24,8 @@ public class AddAgendaActivity extends AppCompatActivity {
 
         editTextName = findViewById(R.id.editTextNombre);
         editTextTime = findViewById(R.id.editTextDosis);
-        editTextDay = findViewById(R.id.editTextFrecuencia);
-        editTextFrequency = findViewById(R.id.editTextStock);
+        editTextDay = findViewById(R.id.editTextStock);
+        editTextFrequency = findViewById(R.id.editTextFrecuencia);
         Button btnSave = findViewById(R.id.btnSave);
 
         btnSave.setOnClickListener(v -> {
