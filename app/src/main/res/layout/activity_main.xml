@@ -8,7 +8,7 @@
     tools:context=".MainActivity"
     android:padding="16dp"
     android:orientation="vertical"
-    android:background="@drawable/fondo_celeste">
+    android:background="@drawable/fondo">
 
     <!--opciones clandario contacto notificaciones-->
     <LinearLayout
@@ -21,76 +21,157 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="1">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ver
-                    Calendario"
-                    android:textAlignment="center"
-                    android:layout_alignParentBottom="true">
-                </TextView>
-                <ImageButton
-                    android:id="@+id/calendario"
-                    android:layout_width="185px"
-                    android:layout_height="185px"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/calendario"
-                    />
-            </RelativeLayout>
+            <!-- linear imagen de calendario -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/calendario"
+                        android:layout_width="185px"
+                        android:layout_height="185px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/calendario"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- linear texto del boton calendario -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver \nCalendario"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true">
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
         <!-- Linear agregar contacto -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="1">
-            <RelativeLayout
+
+            <!-- linear imagen de agregar contacto -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ajuste notificaciones"
-                    android:textAlignment="center"
-                    android:layout_alignParentBottom="true"
-                    ></TextView>
-                <ImageButton
-                    android:id="@+id/agregarcontacto"
-                    android:layout_width="185px"
-                    android:layout_height="185px"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/campana"
-                    />
-            </RelativeLayout>
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/agregarcontacto"
+                        android:layout_width="185px"
+                        android:layout_height="185px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/campana"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- linear texto del boton agregar contacto -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ajuste \nnotificaciones"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true">
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
         <!-- Linear personalizar notificaciones -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="1">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Contacto Emergencia"
-                    android:textAlignment="center"
-                    android:layout_alignParentBottom="true">
 
-                </TextView>
-                <ImageButton
-                    android:id="@+id/opcionesnotificacion"
-                    android:layout_width="185px"
-                    android:layout_height="185px"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/contacto"
-                    />
-            </RelativeLayout>
+
+            <!-- linear imagen de notificaciones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/opcionesnotificacion"
+                        android:layout_width="185px"
+                        android:layout_height="185px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/contacto"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- linear texto del boton notificaciones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contacto \nEmergencia"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true">
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 
@@ -131,7 +212,7 @@
                     android:textColor="@color/black"
                     android:text="Añadir Agenda"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="@color/celeste"/>
+                    android:backgroundTint="@color/cyan"/>
             </RelativeLayout>
         </LinearLayout>
         <!-- Linear boton emergencia -->
@@ -149,7 +230,7 @@
                     android:textSize="30dp"
                     android:text="+"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="@color/rojo"/>
+                    android:backgroundTint="@color/azul"/>
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>

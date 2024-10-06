@@ -22,10 +22,10 @@ public class AddAgendaActivity extends AppCompatActivity {
 
         dbHelper = new DatabaseHelper(this);
 
-        editTextName = findViewById(R.id.editTextName);
-        editTextTime = findViewById(R.id.editTextTime);
-        editTextDay = findViewById(R.id.editTextDay);
-        editTextFrequency = findViewById(R.id.editTextFrequency);
+        editTextName = findViewById(R.id.editTextNombre);
+        editTextTime = findViewById(R.id.editTextDosis);
+        editTextDay = findViewById(R.id.editTextFrecuencia);
+        editTextFrequency = findViewById(R.id.editTextStock);
         Button btnSave = findViewById(R.id.btnSave);
 
         btnSave.setOnClickListener(v -> {
